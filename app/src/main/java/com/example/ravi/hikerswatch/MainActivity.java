@@ -1,7 +1,6 @@
 package com.example.ravi.hikerswatch;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -48,16 +47,20 @@ public class MainActivity extends AppCompatActivity {
     public void updateLocation(Location location){
 
 
-        TextView latTextView = (TextView) findViewById(R.id.latTextView);
-        TextView longTextView = (TextView) findViewById(R.id.longTextView);
-        TextView altTextView = (TextView) findViewById(R.id.altTextView);
-        TextView accTextView = (TextView) findViewById(R.id.accTextView);
-        TextView addTextView = (TextView) findViewById(R.id.addTextView);
+        TextView latTextView = findViewById(R.id.latTextView);
+        TextView longTextView = findViewById(R.id.longTextView);
+        TextView altTextView = findViewById(R.id.altTextView);
+        TextView accTextView = findViewById(R.id.accTextView);
+        TextView addTextView = findViewById(R.id.addTextView);
 
-        latTextView.setText("Latitude : " + location.getLatitude());
-        longTextView.setText("Longitude : " + location.getLongitude());
-        altTextView.setText("Altitude : " + location.getAltitude());
-        accTextView.setText("Accuracy : " + location.getAccuracy());
+        String str = getString(R.string.latitude) + location.getLatitude();
+        latTextView.setText(str);
+        str = getString(R.string.longitude) + location.getLongitude();
+        longTextView.setText(str);
+        str = getString(R.string.altitude) + location.getAltitude();
+        altTextView.setText(str);
+        str = getString(R.string.accuracy) + location.getAccuracy();
+        accTextView.setText(str);
 
         Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
 
