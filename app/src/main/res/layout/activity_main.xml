@@ -11,6 +11,7 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:contentDescription="@string/background"
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,7 +25,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="45dp"
-            android:text="Hicker's Watch"
+            android:text="@string/hicker_watch"
             android:textColor="@android:color/background_dark"
             android:textSize="30sp" />
 
@@ -35,7 +36,7 @@
             android:layout_below="@+id/textView"
             android:layout_marginTop="65dp"
             android:layout_toStartOf="@+id/textView"
-            android:text="Latitude : "
+            android:text="@string/latitude"
             android:textColor="@android:color/background_dark" />
 
         <TextView
@@ -45,7 +46,7 @@
             android:layout_alignStart="@+id/latTextView"
             android:layout_below="@+id/longTextView"
             android:layout_marginTop="20dp"
-            android:text="Altitude : "
+            android:text="@string/altitude"
             android:textColor="@android:color/background_dark" />
 
         <TextView
@@ -55,7 +56,7 @@
             android:layout_alignStart="@+id/altTextView"
             android:layout_below="@+id/latTextView"
             android:layout_marginTop="15dp"
-            android:text="Longitude : "
+            android:text="@string/longitude"
             android:textColor="@android:color/background_dark"/>
 
         <TextView
@@ -65,7 +66,7 @@
             android:layout_alignStart="@+id/altTextView"
             android:layout_below="@+id/altTextView"
             android:layout_marginTop="27dp"
-            android:text="Accuracy : "
+            android:text="@string/accuracy"
             android:textColor="@android:color/background_dark" />
 
         <TextView
@@ -75,7 +76,7 @@
             android:layout_alignStart="@+id/accTextView"
             android:layout_below="@+id/accTextView"
             android:layout_marginTop="53dp"
-            android:text="Address : \nAddress Line 1\nAddress Line 2"
+            android:text="@string/address__address_line1__address_line_2"
             android:textColor="@android:color/background_dark" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
