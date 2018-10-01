@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Hikers Watch</string>
+    <string name="hicker_watch">Hicker\'s Watch</string>
+    <string name="latitude">Latitude :</string>
+    <string name="altitude">Altitude :</string>
+    <string name="longitude">Longitude :</string>
+    <string name="accuracy">Accuracy :</string>
+    <string name="address__address_line1__address_line_2">Address :  Address Line 1 Address Line 2</string>
+    <string name="background">background_image</string>
 </resources>
